@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+//con questo percorso rende disponibile movie
+
 use App\Movie;
 
 
@@ -13,7 +15,8 @@ class PageController extends Controller
     public function index()
     {
         $movies = Movie::all();
-        dd($movies);
+        // prova stampa
+        // dd($movies);
         return view('home');
     }
 }
