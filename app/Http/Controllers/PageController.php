@@ -15,9 +15,10 @@ class PageController extends Controller
     public function index()
     {
         $movies = Movie::all();
+        $data = ['movies' => $movies];
         // prova stampa
         // dd($movies);
-        return view('home');
+        return view('home', $data);
     }
 }
 
